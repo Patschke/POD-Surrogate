@@ -1,6 +1,6 @@
 # Implementation of a POD based surrogate model for aerodynamic shape optimization
 
-Please refer to the thesis for a in depth description of the methods involved. 
+Please refer to the thesis for a in depth description of the methods involved. Some data has not been included into this git repository due to the 100MB file size limit of GitHub
 
 Make sure the imports of SU2, Armadillo, PyDOE and RoDeO within the source files work for your setup. 
 
