@@ -1,0 +1,1 @@
+Note: kriging_training.cpp, kriging_training.hpp and Rodeo_macros.hpp are part of RoDeO, and not my work. 

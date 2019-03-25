@@ -1,0 +1,65 @@
+
+#ifndef RODEO_MACROS_HPP
+#define RODEO_MACROS_HPP
+
+
+enum DATA_FILE_FORMAT {
+	RAW_ASCII,
+	CSV_ASCII
+
+};
+
+enum SAMPLING_METHOD { 
+	EXISTING_FILE,          /* read samples from an existing file */
+	PREDEFINED_LOCATIONS,   /* generate samples for given locations */
+	RANDOM_SAMPLING, 
+	LHS_CENTER, 
+	LHS_RANDOM };
+
+
+enum LINEAR_REGRESSION {
+	LINEAR_REGRESSION_OFF,
+	LINEAR_REGRESSION_ON,
+};
+
+
+enum SURROGATE_MODEL { 
+	KRIGING_STANDART, 
+	KRIGING_GAUSS, 
+	GEK_STANDART };
+
+
+enum METHOD_FOR_LIN_EQN_SOLVER {
+	CHOLESKY,
+	SVD,
+	MATRIX_INVERSION};
+
+enum TRAINING_METHOD {
+	MAXIMUM_LIKELIHOOD,
+	CROSS_VALIDATION};
+
+
+enum RBF_TYPE {
+    GAUSSIAN,
+    LINEAR,
+    CUBIC,
+    THIN_PLATE_SPLINE,
+    MULTIQUADRATIC,
+    INV_MULTIQUADRATIC};
+
+
+enum SVM_KERNEL_TYPE {
+    SVM_LINEAR,
+    SVM_RBF,
+    SVM_POLYNOMIAL};
+
+
+#define LARGE 10E14
+#define EPSILON 10-14
+#define EPSILON_SINGLE 10E-6
+
+
+#define MIN(x,y) ((x) <= (y) ? x : y)
+#define MAX(x,y) ((x) <= (y) ? y : x)
+
+#endif
